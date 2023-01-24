@@ -44,5 +44,8 @@ The journey language
 ## Why zig?
  Compiler should better be implemented in low level so that we have good enough performance. Zig is easy to cross platform, and extremely easy to use C libraries. Apart from them, zig have cool comptime feature to help me keep the code clean. I think that's enough reason for me to use Zig.
 
+## Why not rust?
+  Rust is good in guranteeing memory safety. But rust provide too many higher order concept, it's too hard to use and prototype. For an extensible system, ideally I wish it works well directly with zig, e.g. it would be nice if we are able to call zig functions out of the box.
+
 ## Why Lisp syntax?
  It's kinda obvious to write a software that have 100% potential in syntax extensibility, you almost always end up with something like lisp. 
