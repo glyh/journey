@@ -25,6 +25,7 @@ The journey language
   I expect the follow to be possible with Journey
   - send code between machine to execute the code
   - modify the software itself when it's running
+  - automatic C-FFI
 
 ### Robustness 
   As we learn from history, one of the reason Perl/TCL/Bash is dying out/hated is that they are not suitable for writing robust softwares. They are super extensible, though. The problems lies in the fact that achieving both robustness and robustness is hard, so we definitely need to find a way to alleviate that pain. 
@@ -35,7 +36,13 @@ The journey language
 ### Start up time
   One of the reason I don't like Clojure&Emacs is the start up time. So I definitely want to fix that.
 
+### Functional with stateful type system 
+  It doesn't mean you need to use monad when writing the software. It's just with the type system we know more about the behavior so it's easier to create a safe software.
+
 # Implemention details
 
 ## Why zig?
  Compiler should better be implemented in low level so that we have good enough performance. Zig is easy to cross platform, and extremely easy to use C libraries. Apart from them, zig have cool comptime feature to help me keep the code clean. I think that's enough reason for me to use Zig.
+
+## Why Lisp syntax?
+ It's kinda obvious to write a software that have 100% potential in syntax extensibility, you almost always end up with something like lisp. 
