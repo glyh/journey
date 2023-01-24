@@ -46,6 +46,7 @@ The journey language
 
 ## Why not rust?
   Rust is good in guranteeing memory safety. But rust provide too many higher order concept, it's too hard to use and prototype. For an extensible system, ideally I wish it works well directly with zig, e.g. it would be nice if we are able to call zig functions out of the box.
+  Also, a VM is not safe, inherently, if you want finer memory control. It's true that we can write unsafe rust code, but I kinda expect those things happening everywhere, so I think I better not using rust here.
 
 ## Why Lisp syntax?
  It's kinda obvious to write a software that have 100% potential in syntax extensibility, you almost always end up with something like lisp. 
